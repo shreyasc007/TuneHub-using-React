@@ -1,0 +1,126 @@
+.log {
+  background-color: #e6f0ff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 350px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.container img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"],
+.container textarea {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.container input[type="submit"],
+.container button {
+  background-color: #4285f4;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.container input[type="submit"]:hover,
+.container button:hover {
+  background-color: #357ae8;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height to center vertically */
+}
+
+/* Custom radio buttons */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  margin: 8px 0;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  font-size: 14px;
+}
+
+.radio-group input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-group .custom-radio {
+  position: absolute;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.radio-group input:checked ~ .custom-radio {
+  background-color: #4285f4;
+}
+
+.radio-group .custom-radio::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-group input:checked ~ .custom-radio::after {
+  display: block;
+}
+
+.radio-group .custom-radio::after {
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
